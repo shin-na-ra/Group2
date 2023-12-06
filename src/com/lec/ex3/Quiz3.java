@@ -4,7 +4,7 @@ public class Quiz3 {
 
 
 	//Field
-	int fac = 0;
+	int fac = 1;
 
 	//Constructor
 	
@@ -15,8 +15,8 @@ public class Quiz3 {
 	
 		for(int i=1; i<=num; i++) {
 			fac *=i;
-			System.out.println(num + " 's factorial value =" + fac);
+			
 		}
-	
+		System.out.println(num + " 's factorial value =" + fac);
 	}
 }

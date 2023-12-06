@@ -1,10 +1,60 @@
 package com.lec.base;
 
+import java.util.Scanner;
+
+import com.lec.ex2.Quiz2;
+import com.lec.ex3.Quiz3;
+import com.lec.ex4.Quiz4;
+import com.lec.ex1.Calc;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		int input = 0;
+		
+		int num2 = 0;
+		int num3 = 0;
+		int num4 = 0;
+		
+		Scanner scanner = new Scanner(System.in);
+		Quiz2 quiz2 = new Quiz2();
+		Quiz3 quiz3 = new Quiz3();
+		Quiz4 quiz4 = new Quiz4();
+		Calc cal = new Calc();
+		
+		System.out.print("원하는 결과물을 선택하세요 >>>> ");
+		input = scanner.nextInt();
+		
+		switch (input){
+		case 1 :		//현빈
+			cal.gugu();
+			break;
+		case 2 : 	//휘
+			System.out.print("Input your number : ");
+			num2 = scanner.nextInt(); 
+		
+			quiz2.gugu(num2);
+			
+			break;
+			
+		case 3 :	//서
+			System.out.print("Input your number : ");
+			num3 = scanner.nextInt(); 
+			quiz3.factorial(num3);
+			
+			break;
+			
+		case 4 :	//나라
+			System.out.print("몇 단계의 피라미드로 구성할까? : ");
+			num4 = scanner.nextInt(); 
+			quiz4.ex4(num4);
+			break;
+			
+		default:
+			System.out.println("종료");
+			break;
+		}
 	}
 
 }

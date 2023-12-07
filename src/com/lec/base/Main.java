@@ -23,38 +23,45 @@ public class Main {
 		Quiz4 quiz4 = new Quiz4();
 		Calc cal = new Calc();
 		
+		while(true) {
 		System.out.print("원하는 결과물을 선택하세요 >>>> ");
 		input = scanner.nextInt();
 		
-		switch (input){
-		case 1 :		//현빈
-			cal.gugu();
-			break;
-		case 2 : 	//휘
-			System.out.print("Input your number : ");
-			num2 = scanner.nextInt(); 
-		
-			quiz2.gugu(num2);
 			
-			break;
+			switch (input){
+			case 1 :		//현빈
+				cal.gugu();
+				System.out.println();		
+				break;
+			case 2 : 	//휘
+				System.out.print("Input your number : ");
+				num2 = scanner.nextInt(); 
 			
-		case 3 :	//서
-			System.out.print("Input your number : ");
-			num3 = scanner.nextInt(); 
-			quiz3.factorial(num3);
-			
-			break;
-			
-		case 4 :	//나라
-			System.out.print("몇 단계의 피라미드로 구성할까? : ");
-			num4 = scanner.nextInt(); 
-			quiz4.ex4(num4);
-			break;
-			
-		default:
-			System.out.println("종료");
-			break;
+				quiz2.gugu(num2);
+				System.out.println();				
+				break;
+				
+			case 3 :	//서
+				System.out.print("Input your number : ");
+				num3 = scanner.nextInt(); 
+				quiz3.factorial(num3);
+				System.out.println();		
+				break;
+				
+			case 4 :	//나라
+				System.out.print("몇 단계의 피라미드로 구성할까? : ");
+				num4 = scanner.nextInt(); 
+				quiz4.ex4(num4);
+				System.out.println();		
+				break;
+				
+			default:
+				System.out.println("종료");
+				break;
+			}
 		}
+		
+		
 	}
 
 }

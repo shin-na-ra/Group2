@@ -9,10 +9,15 @@ import com.lec.ex1.Calc;
 
 public class Main {
 
+	/*
+	 *	Date : 2023.12.07
+	 *	Author : SHIN-NA-RA
+	 *	Description : 사용자에게 입력받고 퀴즈에 대한 결과 출력
+	 */
+	
 	public static void main(String[] args) {
 
 		int input = 0;
-		
 		int num2 = 0;
 		int num3 = 0;
 		int num4 = 0;
@@ -24,38 +29,39 @@ public class Main {
 		Calc cal = new Calc();
 		
 		while(true) {
-		System.out.print("원하는 결과물을 선택하세요 >>>> ");
-		input = scanner.nextInt();
-		
+			System.out.print("원하는 결과물을 선택하세요 >>>> ");
+			input = scanner.nextInt();
 			
 			switch (input){
-			case 1 :		//현빈
+			case 1 :		
 				cal.gugu();
 				System.out.println();		
 				break;
-			case 2 : 	//휘
+				
+			case 2 : 	
 				System.out.print("Input your number : ");
 				num2 = scanner.nextInt(); 
-			
 				quiz2.gugu(num2);
 				System.out.println();				
 				break;
 				
-			case 3 :	//서
+			case 3 :	
 				System.out.print("Input your number : ");
 				num3 = scanner.nextInt(); 
 				quiz3.factorial(num3);
 				System.out.println();		
 				break;
 				
-			case 4 :	//나라
+			case 4 :	
 				System.out.print("몇 단계의 피라미드로 구성할까? : ");
 				num4 = scanner.nextInt(); 
 				quiz4.ex4(num4);
 				System.out.println();		
 				break;
 				
-			default:
+			}
+			
+			if(input > 4) {
 				System.out.println("종료");
 				break;
 			}

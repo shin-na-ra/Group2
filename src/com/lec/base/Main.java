@@ -10,7 +10,7 @@ import com.lec.ex1.Calc;
 public class Main {
 
 	/*
-	 *	Date : 2023.12.07
+	 *	Date : 2023.12.07 v1
 	 *	Author : SHIN-NA-RA
 	 *	Description : 사용자에게 입력받고 퀴즈에 대한 결과 출력
 	 */
